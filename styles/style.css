@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   line-height: 1.35;
   font-weight: 400;
-  background: #1e1e1e url(../images/body.jpg) no-repeat 50% 0;
+  background: #1e1e1e;
 }
 .header {
   padding: 92px 24px;
