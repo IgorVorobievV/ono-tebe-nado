@@ -1,4 +1,5 @@
 body {
+  font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 1.35;
   font-weight: 400;
@@ -34,14 +35,16 @@ body {
 .header__link:hover {
   border-bottom: 1px solid transparent;
 }
-.header__address {
+.address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-style: normal;
+}
+.header__address {
   justify-content: center;
   justify-self: end;
   gap: 1px;
-  font-style: normal;
   padding-right: 62px;
 }
 .cover {
@@ -86,18 +89,17 @@ body {
 }
 .cover__description-text {
   font-size: 22px;
-  line-height: 28px;
   word-spacing: 0.85em;
-  font-weight: normal;
   padding: 0 28px;
 }
 .bet-button {
+  font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
   background: transparent;
   border: 1px solid;
-  padding: 12px 32px;
+  padding: 11px 32px;
   cursor: pointer;
 }
 .bet-button:hover {
@@ -127,10 +129,10 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 26px;
 }
 .lots__card-list-item {
-  flex: 1 0 334px;
+  flex: 1 0 237px;
 }
 .card-link {
   text-decoration: none;
@@ -145,18 +147,20 @@ body {
   height: 100%;
   position: relative;
   z-index: 0;
+  background: no-repeat 50% / cover;
+  min-height: 563px;
 }
 .card:hover .overlay {
   opacity: 0.4;
 }
 .card_type_film {
-  background: url("../images/card-lot-01.jpg") no-repeat 50% / cover;
+  background-image: url("../images/card-lot-01.jpg");
 }
 .card_type_book {
-  background: url("../images/card-lot-02.jpg") no-repeat 50% / cover;
+  background-image: url("../images/card-lot-02.jpg");
 }
 .card_type_picture {
-  background: url("../images/card-lot-03.jpg") no-repeat 50% / cover;
+  background-image: url("../images/card-lot-03.jpg");
 }
 .card__title {
   font-size: 22px;
@@ -185,7 +189,6 @@ body {
   padding-top: 35px;
   display: grid;
   grid-template-columns: 47px 240px 72px 1fr;
-  grid-template-rows: 250px 1fr;
   grid-template-areas:
     ". logo . title"
     ". . . text";
@@ -197,6 +200,7 @@ body {
   border-radius: 50%;
   display: flex;
   grid-area: logo;
+  margin-bottom: 10px;
 }
 .about__logo-image {
   width: 148px;
@@ -224,12 +228,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   font-size: 18px;
 }
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
-  align-items: flex-start;
-}
 .footer__link {
   text-decoration: none;
   border-bottom: 1px solid;
@@ -240,6 +238,7 @@ body {
 .footer__menu-list {
   list-style: none;
   line-height: 1.2;
+  text-align: center;
 }
 .footer__menu-link {
   text-decoration: none;
